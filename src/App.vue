@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Register/>
   </div>
 </template>
+
+<script>
+import Register from '@/components/Register'
+export default {
+  name: 'App',
+  components: {
+    Register
+  }
+}
+</script>
 
 <style>
 #app {
